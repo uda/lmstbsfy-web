@@ -10,8 +10,11 @@ body{
   font-family: "Alef Hebrew", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#page {
+#page-wrapper {
   padding: 0px 5px;
+}
+
+#page {
   text-align: center;
   margin: 0 auto;
 }
@@ -33,14 +36,40 @@ h1 a:hover {
 }
 
 #content-wrapper {
-  margin-top: 20px;
+  margin-top: 140px;
 }
 
-#query-field input {
+.lmstbsfy-wrapper.query {
+  position: relative;
+}
+
+.lmstbsfy-wrapper.query input {
   background-image: url(../img/bs_logo_48.png);
   background-repeat: no-repeat;
   background-position: 4px -4px;
   padding-left: 55px;
+}
+
+#lmstbsfy-beta {
+  position: absolute;
+  right: 5%;
+  top: 45px;
+  padding: 1px 7px;
+  background-color: #ccc;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  -ms-border-bottom-left-radius: 5px;
+  -ms-border-bottom-right-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#footer nav a {
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -50,15 +79,18 @@ h1 a:hover {
   }
 
   #content-wrapper {
-    margin-top: 40px;
+    margin-top: 80px;
   }
 
-  #query-field > * {
+  .lmstbsfy-wrapper {
     float: left;
   }
 
-  #query-field select {
+  .lmstbsfy-wrapper.engine {
     width: 20%;
+  }
+
+  .lmstbsfy-wrapper.engine select {
     -webkit-border-top-right-radius: 0;
     -moz-border-top-right-radius: 0;
     -ms-border-top-right-radius: 0;
@@ -71,8 +103,11 @@ h1 a:hover {
     border-bottom-right-radius: 0;
   }
 
-  #query-field input {
+  .lmstbsfy-wrapper.query {
     width: 70%;
+  }
+
+  .lmstbsfy-wrapper.query input {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
@@ -80,8 +115,12 @@ h1 a:hover {
     border-radius: 0;
   }
 
-  #query-field button {
+  .lmstbsfy-wrapper.submit {
     width: 10%;
+  }
+
+  .lmstbsfy-wrapper.submit button {
+    width: 100%;
     -webkit-border-top-left-radius: 0;
     -moz-border-top-left-radius: 0;
     -ms-border-top-left-radius: 0;
