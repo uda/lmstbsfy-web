@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+body{
+  font-family: "Alef Hebrew", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#page {
+  padding: 0px 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-collapse label {
+  display: none;
+}
+
+#header-wrapper {
+  display: none;
+}
+
+h1 img {
+  margin-top: -8px;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+#content-wrapper {
+  margin-top: 20px;
+}
+
+#query-field input {
+  background-image: url(../img/bs_logo_48.png);
+  background-repeat: no-repeat;
+  background-position: 4px -4px;
+  padding-left: 55px;
+}
+
+@media (min-width: 768px) {
+  #header {
+    height: 150px;
+    padding-top: 40px;
+  }
+
+  #content-wrapper {
+    margin-top: 40px;
+  }
+
+  #query-field > * {
+    float: left;
+  }
+
+  #query-field select {
+    width: 20%;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -ms-border-top-right-radius: 0;
+    -o-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    -ms-border-bottom-right-radius: 0;
+    -o-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #query-field input {
+    width: 70%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+  }
+
+  #query-field button {
+    width: 10%;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -ms-border-top-left-radius: 0;
+    -o-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -ms-border-bottom-left-radius: 0;
+    -o-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
