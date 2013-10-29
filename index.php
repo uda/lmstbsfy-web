@@ -1,4 +1,12 @@
 <?php
+/**
+ * @file index.php
+ *       main file and (only) page
+ * @package LMSTBSFY
+ * @author Yehuda T. Deutsch <yeh@uda.co.il>
+ * @copyright (C) 2013, Yehuda T. Deutsch <yeh@uda.co.il>
+ * @license MIT License (http://www.opensource.org/licenses/mit-license.php)
+ */
 define('LMSTBSFY', TRUE);
 
 if (!empty($_POST)) {

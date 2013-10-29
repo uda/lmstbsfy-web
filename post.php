@@ -1,10 +1,19 @@
 <?php defined('LMSTBSFY') or die('Wrong access.');
 /**
+ * @file post.php
+ *       no-js form handling
+ * @package LMSTBSFY
+ * @author Yehuda T. Deutsch <yeh@uda.co.il>
+ * @copyright (C) 2013, Yehuda T. Deutsch <yeh@uda.co.il>
+ * @license MIT License (http://www.opensource.org/licenses/mit-license.php)
+ */
+
+/**
  * This file has not been checked and is a simple fallback for no-js cases
  */
 
 function go($url = './') {
-  header('Location: ' . $url, 302, TRUE);
+  header('Location: ' . $url, TRUE, 302);
   exit;
 }
 
