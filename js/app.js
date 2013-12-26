@@ -6,6 +6,24 @@
  * @license MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 (function($) {
+  $.fn.extend({
+    appendVal: function(val) {
+      return this.each(function() {
+        var self = $(this);
+        if (typeof self.val != "undefined") {
+          self.val(self.val() + val);
+        }
+      });
+    },
+    prependVal: function(val) {
+      return this.each(function() {
+        var self = $(this);
+        if (typeof self.val != "undefined") {
+          self.val(val + self.val());
+        }
+      });
+    }
+  });
   $(document).ready(function() {
     var have_qtips = ".has-qtip";
     var qtip_opts = {
@@ -41,6 +59,16 @@
     $("#lmstbsfy-query").on("keypress", function(event) {
       $(this).qtip('hide');
     });
+
+    var lmstbsfy_query = $.url().param('q');
+    if (lmstbsfy_query != undefined) {
+      $("#lmstbsfy-query").val("");
+      for (i in lmstbsfy_query) {
+        setTimeout("$(\"#lmstbsfy-query\").appendVal(\"" + lmstbsfy_query[i] + "\")", i * 300);
+      }
+      setTimeout("$(\"#lmstbsfy-submit\").addClass(\"btn-success\");", (lmstbsfy_query.length * 300) + 500);
+      setTimeout("$(\"#lmstbsfy-submit\").click();", (lmstbsfy_query.length * 300) + 1500);
+    }
   });
 })(jQuery);
 
