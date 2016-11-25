@@ -35,7 +35,7 @@ if (!empty($post) && isset($post['query']) && strlen($post['query']) >= 3) {
     $selected_se = $post['engine'];
   }
 
-  $text .= '%20AND%20(debunk%20OR%20fake%20OR%20hoax%20OR%20quack)';
+  $text .= '%20AND%20(debunk%20OR%20fake%20OR%20hoax%20OR%20quack%20OR%20snopes)';
   $url = str_replace('%s', $text, $search_engines[$selected_se]);
   go($url);
 }
